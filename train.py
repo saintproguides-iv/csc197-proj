@@ -3,7 +3,6 @@ import json
 import torch
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from datasets import Dataset
 from transformers import (
     AutoTokenizer,
@@ -12,6 +11,15 @@ from transformers import (
     Trainer,
     DataCollatorWithPadding
 )
+
+# ----------------------------------------------------------------------
+# Settings you may want to change
+# ----------------------------------------------------------------------
+TRAIN_PATH = "data/sip_train.csv"
+VAL_PATH = "data/sip_val.csv"
+NUM_EPOCHS = 5
+MODEL_NAME = "microsoft/deberta-v3-base"
+SAVE_DIR = "./saved_model"
 
 # Detect best available compute device
 if torch.cuda.is_available():
@@ -22,18 +30,20 @@ else:
     device = "cpu"
 print(f"Using execution device: {device}")
 
-# 1. Load Data
-CSV_PATH = "tasks_dataset_expanded.csv"
-if not os.path.exists(CSV_PATH):
-    raise FileNotFoundError(f"Missing {CSV_PATH} in project root!")
+# 1. Load pre-split data (made by prepare_sip.py)
+for p in (TRAIN_PATH, VAL_PATH):
+    if not os.path.exists(p):
+        raise FileNotFoundError(
+            f"Missing {p}. Put the CSVs in the data/ folder or run prepare_sip.py first."
+        )
 
-df = pd.read_csv(CSV_PATH)
-df["log_hours"] = np.log1p(df["base_hours"]).astype(np.float32)
+train_df = pd.read_csv(TRAIN_PATH)
+val_df = pd.read_csv(VAL_PATH)
+for d in (train_df, val_df):
+    d["log_hours"] = np.log1p(d["base_hours"]).astype(np.float32)
+print(f"Train rows: {len(train_df)} | Validation rows: {len(val_df)}")
 
-# 2. Train/Validation Split (80/20)
-train_df, val_df = train_test_split(df, test_size=0.2, random_state=42)
-
-# Standardize targets using TRAIN statistics only
+# 2. Standardize targets using TRAIN statistics only
 LABEL_MEAN = float(train_df["log_hours"].mean())
 LABEL_STD = float(train_df["log_hours"].std() + 1e-8)
 train_df = train_df.assign(
@@ -51,7 +61,6 @@ val_dataset = Dataset.from_pandas(
 )
 
 # 3. Tokenization
-MODEL_NAME = "microsoft/deberta-v3-base"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 def tokenize_function(examples):
@@ -89,12 +98,12 @@ training_args = TrainingArguments(
     max_grad_norm=1.0,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
-    num_train_epochs=15,
+    num_train_epochs=NUM_EPOCHS,
     weight_decay=0.01,
     load_best_model_at_end=True,
     metric_for_best_model="mae",
     greater_is_better=False,
-    logging_steps=5,
+    logging_steps=50,      # was 5; fewer log lines now that there is more data
     save_total_limit=1,
     fp16=False,
     bf16=False,
@@ -110,12 +119,28 @@ trainer = Trainer(
     compute_metrics=compute_metrics,
 )
 
-# 7. Run Training & Save Outputs
+# 7. Run Training, print results, save outputs
 if __name__ == "__main__":
     print("Starting DeBERTa-v3 fine-tuning...")
     trainer.train()
 
-    SAVE_DIR = "./saved_model"
+    # --- validation results (best epoch, since load_best_model_at_end=True) ---
+    metrics = trainer.evaluate()
+    print("\n=== Validation results (best epoch) ===")
+    print(f"MAE : {metrics['eval_mae']:.2f} hours")
+    print(f"RMSE: {metrics['eval_rmse']:.2f} hours")
+
+    # baseline: always guess the training median
+    base = float(train_df["base_hours"].median())
+    base_mae = float((val_df["base_hours"] - base).abs().mean())
+    print(f"Baseline (always guess {base:.2f} h) MAE: {base_mae:.2f} hours")
+
+    print("\nEpoch-by-epoch:")
+    for log in trainer.state.log_history:
+        if "eval_mae" in log:
+            print(f"  epoch {log['epoch']:.0f}: MAE {log['eval_mae']:.2f}  RMSE {log['eval_rmse']:.2f}")
+
+    # --- save the best model ---
     trainer.save_model(SAVE_DIR)          # saves the best model
     tokenizer.save_pretrained(SAVE_DIR)
     with open(os.path.join(SAVE_DIR, "label_stats.json"), "w") as f:

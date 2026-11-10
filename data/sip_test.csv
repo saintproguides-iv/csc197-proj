@@ -1,0 +1,776 @@
+task_description,base_hours
+Proportional Accruals for Figures Book,5.25
+XXXX SCMS - Users Complaining Sluggish Speed On Bringing Back SCMs,0.6
+Grid Column Sizing Issues Relating to V3 Speed Ups,4.5
+YouLinkHR Workflow Release,25.61
+Last grid cell not resizing properly,7.02
+Set appropriate limits on GroupBy for various fields.,4.0
+XXXX: XLsior Proprtional to allow selecting range of months,0.5
+Cred-IT Export,28.72
+Calculation change to Premium object,14.58
+SCMS - LoadItem trace,1.0
+YYY ZZZ SCMS framework errors with application due to .NET installation problems,1.5
+BMS Support for week 30/06/08,7.0
+CCC: Query to zero down dummy USM message transaction count,0.5
+Bordereau Back Loader on 30/08/07,0.33
+User Support: SCM Search Brings Back Incorrect IncSettSynd figure,0.5
+Write A Prototype Socket Layer Data Transfer Mechanism For Silverlight,18.73
+SCM Super Search slow again - speed up,1.5
+BMS Adding Deductions fails,0.1
+Insured/Reinsured Details Populated By SCM Validation Suspect.,3.5
+BMS Diary Event Bordereau Due - Release To Live From Test.,0.5
+Bordereau Back Loader on 04/10/07,0.33
+Save OK and Warning Messages,1.1
+Business Object Creation Spike in V2,7.0
+V3 - Certain mandatory validation errors not appearing,2.75
+Add new field to RISK for recording placing bordereaux frequency,0.5
+Inherit Super Search from Stats from to make it drillable,2.0
+BMS Support for week of 21st Jan 08,7.0
+CCC Specific Batch Job Log Report Setup And Release,1.75
+Refactoring LinkEX SQL Stored Procedures to make system more managable,18.5
+Weekly Developer Meeting 14th September 2005 - Event Handlers,10.5
+Period Close Testing,4.5
+YouLink HR: YYY ZZZ Employee Data Conversion,11.93
+Fixing bugs in Control Container Wizard,1.0
+Flex Mobile: Phone Insurance - Is Active indicator required.,5.75
+Grid very slow to draw when number of columns is large,2.0
+Message Loader Testing,1.5
+SCM/USM Validation Need To Work With New SiP Loader Database,21.0
+Diary Event Issues From Claim Dept,0.5
+SP_REF_PERIOD_CLOSE_RI_QUOTASHARE_CALC needs a little work,3.5
+YouLink HR: Modiify Mobile Label on Staff List (and update release notes),0.76
+Test script and new procedures for diary eventing,13.5
+"YYY ZZZ Bug fix, issue with nightly download",3.0
+XXXX v2.1 Test System Setup.,4.0
+Miscellaneous Tasks for December,2.25
+Synd XXXX: Aid YYY ZZZ With USM/SCM Validation Error Corrections,1.5
+Task Check Out Area Needs Setting To SiP.Applications,0.91
+Bordereau Back Loader on 19/01/2007,0.25
+Flex Mobile - Issue on credit report - product name description blank.,0.5
+"If you add an effort entry retrospectively, it all turns read-only before you can fill it in",0.5
+Daily Report - If Blank Message Request To State Explicitly In Report,2.0
+Filtering of Business Link roles based on Linked Business Object,4.25
+XXXX Period Close Split Complete Check Errors From Past Months,1.0
+Correct Permissions for Users 111 and 222,1.0
+"SCM Search - StatisticalCode1, StatisticalCode2 Returned blank In Search Results Causing Exprot To Fail.",0.5
+SiPDocument - Revision History Enhancements,22.75
+Investigate unlinked movements on XXXX,1.0
+Risk Save Is Taking Too Long,2.0
+Grid gets confused over which rows to colour when scrolling,5.0
+Add Stat Ref To Super Searches,3.5
+Looking into Reporting for DAD system,10.0
+Add user friendly messages when Validation is running or failed on last attempt,4.2
+Add type to the diary event search results grid,1.0
+Adding more user friendly messages when saving Reference Data,2.0
+Check META_FilterSearchGroups,0.5
+XXXX XLsior Export has wrong stat codes in one field,0.5
+RITC Data Mart- Created New Batch Of Weekly Reports For RITC To Use In Reconciliations,3.5
+Loader to check for user during load,1.5
+EMailSender: Clearing Down Bounce Back EMails Not Catered For By The Clean Up Routine,0.5
+USM's not showing RI Summary after load up,1.75
+Release SCMS Application To Live - XXXX Synd,3.0
+Restore type ahead functionality to 'IN' ListBoxes in v.2,2.0
+Make Warehouse tolerant of missing Orig/Sett rates,0.5
+Coverholder And Audit Enhancements Specification,9.25
+Generating Scripts to record Menu Items,8.5
+Task Field Access Corrupting,0.1
+CCC - Report Logo Query,0.25
+Saving notes in XML notes component,0.1
+Release Daily Effort Recored Report,0.6
+Using reflection to bind control Properties,3.5
+Allow right alignment of controls in a panel,2.5
+XXXX v2 Test Release SCM Validation Issues,3.5
+Fix User Preference's control with latest Core/Database,1.5
+Error Message appearing on opening certain USM's,2.0
+v2 User Testing - XXXX SCMs With VARS Split Shows Incorrect Amounts,7.5
+Export issues on Query Search Grid,1.0
+Weekly Developer Meeting 6th October 2005 - Risk Entry,10.5
+YouLink HR: CCC - Extend Trial,0.42
+Diary Event timer still ticking when the Diary Event pop up is displayed,0.7
+SCM Event view: field accesses need some attention,1.0
+Release WIP BMS to CMSHQ1,6.5
+Bordereau Back Loader on 02/03/07,0.25
+Add an additional return column to SCMSuperSearch,2.8
+Investigate bogus 'Message 0 failed to load' errors,3.5
+Removed all Reporting Meta Data From Database,0.5
+XXXX Live Conversion To v1.10,33.0
+SCM Add Linked RI -- SP_SCM_Lookup_Linked_RI/Save Causes Errors,1.5
+SCMS - CCC Support,2.75
+Add Spliters To RI/SCM/USM Search Screens - Tidy Code And Check-In,3.75
+RI Validation warning sometimes fails to clear,0.5
+Update Conversion Progress Document,8.75
+Batch Stored Procedures to create Tasks from Template Tasks,11.0
+Issues raised by Period Close,17.5
+Hook Notes control into Version 3,11.25
+Delayed timer mechanism to allow deferral of function calls,2.0
+BMS/SCMS Risk Code Table Update With Latest Entries From Lloyds,0.5
+RI Validation History Tab Not Working,0.5
+Weekly Developer Meeting 4th June 2008 - CCC Proposal,9.0
+Risk and RI Meeting with CCC and CCC - 25/03/08,7.0
+EMail Sender Adding Additional Exclusions Due To Out Of Office Bounce Backs,2.86
+Code Generator: Categorise Column Notes (With Templates),4.0
+XXXX Warehouse Build,20.5
+BMS Support for Week 15/09/08 - Back dated,7.0
+YouLink HR: Standard/Enhanced Functionality Restrictions,5.32
+Reference Table Project Permissions,0.1
+BMS support for week 02/06/08,7.0
+USMSuperSearch not working,2.0
+"Section Premium, cannot delete any row, only add. BPI completely Read Only",1.75
+Code SP to bypass SQL 2000 temp table glitch.,4.0
+Automatic Processing of Nested Forms and Associated Controls,3.5
+XXXX USM Narrative missing -- test other syndicates too,1.5
+Warehouse changes resulting from move to monthly build,8.5
+Fixing UW Reference problem for CCC,1.25
+TableLayoutPanel not sizing properly,3.75
+V3 - Entering data and doing sorts on properties grid in code gen results in columns being out of sync,3.0
+Allow date text boxes to be cleared if required,0.75
+XXXX SCM Messages Not Loaded User Query,0.5
+Release Technical Core Quick Buttons,2.5
+Checking In Code,10.58
+System Testing for Release on 19th May 2008,4.5
+V3 - Exception thown when using SiPFrameworkGroupSelector and then shutting down Search Control,1.0
+Users Want To See Orig CCY/Sett CCY On RI Policy SCM Linked Tab,1.0
+"[V3 Testing Subsystem] Add Test_Test, Test_Action, Menu items, and Images into shared SiP-Dev database",1.0
+Comparator -- minor bugs remaining,2.5
+Bordereau Back Loader on 21/08/07,0.33
+Flex Mobile - Repair Entry Bug Reported,2.0
+"When Updating Child Risk, Master Risk must also be saved with user message.",1.75
+Flex mobile: Sale With Neagtive Profit Warnng Message PriorContinuing to Save,1.0
+[ V3 Document] Demonstration of new features to YYY ZZZ and YYY ZZZ,1.0
+v2 User Testing: Event Search On Event Brings back Duplicate Rows,0.33
+SCMS Application title,0.7
+XXXX Claim Exception -- Aid YYY ZZZ With Investigating And Resolving Issue,0.25
+Create a Manual RI Policy - Failed to save,4.5
+XXXX Triangle figures wrong,3.5
+Risk Status Default to Written and field access set to Read Only,1.0
+Error in SCM Form when closing 'SiPMappedEventList() - Events Still Mapped In Manager',1.25
+Correcting an UW Reference on LIVE,0.5
+SearchControl code being added by designer causing problems,4.0
+Document Search to include Extension and File Name,0.5
+User Support: XXXX Claim Not Showing Events,1.5
+BMS Technical Consultation with YYY ZZZ and YYY ZZZ.,0.5
+CCC Initial meeting with XXXX user YYY ZZZ (fact finding),11.0
+Grouped Search does not behave correctly on Save,0.7
+Restore Latest v1.10 XXXX Database Over Dev Database,1.0
+Fix USM _Message_summary Stored Proc to work with new USM,2.25
+Sync XXXX Dev Environment With Latest Developments,1.0
+CCC - New Users Setup,0.33
+YouLink HR: Release Work For November,10.38
+Allow Users To Enter Effort In The Future If It Is The NONATTENDANCE Project,0.75
+New Reference Data to be added to Risk Bordereau Status,0.5
+Weekly Developer Meeting 2nd April 2008 - Review of Current Projects,5.0
+Learning about the Risk Schema,3.0
+USM Super Search totals wrong for XXXX RI,0.5
+Investigate negative outstandings in XXXX triangles,3.0
+Investigating differences from user spreadsheet calculated synd level OS and SCMS values.,19.0
+Investigate XXXX Layer Refs,2.0
+Attempt to set a column to IDENTITY fails (syntax error),2.0
+XXXX SCM Movement Flagged Suspicious Payment - Reported By User To Investigate,9.25
+Loader to set vague 'From' dates to start of period,0.5
+USM Validation - broken by second cat 1 USM for same risk (XXXX),1.5
+XXXX msg 191 UWRef changes to handle situation (SCM Validation failure),3.0
+Triangles to use correct exchange rates for pre-FigureBase months,3.0
+Customer Search Needs To Bring Back All Customers - Not Just Those Linked To Connections/Handsets,8.25
+v2 Test System Message Load and Validation Run For Outstanding Messages,1.0
+Remove need for two RTF fields when using Rich Text Boxes,2.0
+Bordereau Back Loader on 10/08/07,0.33
+Create RISK Bulk Copy feature for Renewing and Copying,26.5
+Test/Check-In SCM Split Code And Add New Split Tests To Test Schedule,0.75
+Drill down feature for Statistics Control,17.5
+CCC System - Sun Account Export Enhancements Release,2.5
+BMS Risk Form Failing To Open,3.5
+XXXX Licence Upload,0.5
+CCC - Meeting with YYY ZZZ (CCC) To Discuss Cred-IT Extract,0.75
+Adding Node Search to Knowledge Base,23.0
+BMS Risk Load Slow - Investigate and Correct,2.75
+Contra Item Bug - See Notes - Email,0.75
+Unexpected figures in XXXX XLsior download - correct and investigate extent of problem,10.0
+Fixing problem with Currency on CCC for calculations,1.5
+Holiday Calculations Not Taking Account of HOLBF Absence Entries,1.85
+CCC - Period Close Support,1.5
+Diary Event Not Getting Assigned Owner Correcly when Created,4.25
+CCC XXXX Warehouse Build Failed,0.75
+"CCC user support, removing TEST Risks from LIVE",0.75
+Add reporting META tables to the Comparator,1.0
+XXXX Triangulation Report,28.0
+Code Generator: Improve SiP Data Enumeration,13.25
+Create Linked Combo Boxes for RDC/BMS Data Entry,10.0
+SCM Gross Close Affecting Nett Close - Event Entering,33.5
+Flex Mobile - Diary Event Setup,6.0
+"CCC - Rate of Exchange Update - Load To Test, If OK'd By Users, Load To Live",2.75
+Migrating SCMS v2 into BMS,20.0
+Synchronising Meta Data to get Version 2 XXXX working,5.0
+"On correcting UWRef, RI calcs need to handle any RI on old ref",2.0
+Remaining Forms Conversion To v2 (See Plan For List),13.0
+[V3 Document] Enhance document template field,0.25
+Lines/Initials to be update with list of Managing Agents underwriters initials,0.5
+E-HR Bank Holiday Reference Data,12.5
+BMS Support for Week 09/06/08,7.0
+USM Search and Super Search need to integrate splits,1.0
+XXXX Warehouse Build Failed,1.0
+CCC - Warehouse Build Support,0.33
+Event Search/Edit Needs To Be Set To ReadOnly When User Not In RoleEventsAdmin,3.5
+Flex Mobile - Daily Sales report bug,0.25
+CCC - New User Setup,0.5
+On SCM Load Set Movement CCY Table To Order On 'Last Seen' Date Desc,1.5
+Responding to emails/updating SIP tasks for Flex Mobile and CCC,6.0
+XXXX USM Split To SCM Split Release To Live For User Testing,0.75
+New Period Close System Testing/Conversion To New Structure.,36.5
+Adding Multiple SectionLimits/Premium in Risk causes fail on save because of attempted insertion of duplicate rows in RISK_LineCalculation,1.0
+SCM UWRefs contain lowercase (messes up XLsior),1.0
+Bordereau Back Loader on 30/07/07,0.33
+Getting embedded documents working in Version 3,9.0
+Alter the display order for LinePremiumIncome and LineExposure,0.25
+Trustfund not populating drop down,3.5
+Error in LDEX Loader help,0.1
+Meeting with YYY ZZZ for requirements/understanding business,3.5
+Create CCC banner Graphics for new e-HR Silverlight,0.5
+Synd XXXX Message Load Error,1.0
+System testing on CMSHQ1 TEST,1.5
+Add New Line On Risk Needs Field Access SetUp,1.05
+Domicle lookup shows nothing,0.1
+Triangulation: remove 'Sign On RI' parameter.,0.7
+User Support: XXXX Test Not Loading Messages,0.5
+Remaining small bug in Sun Account Export,2.5
+If No Table Selected On Reference Data Screen - On Closing Form Error Raised,0.25
+Bordereau Quick Entry screen to include table for Bordereau Premium Schedule,10.5
+Bordereau Back Loader on 01/03/07 - New Latest File Load,0.25
+Allow Documents To Be ReLinked To Other Business Objects,0.15
+YouLink HR: YYY ZZZ Online Setup,0.82
+Populate Cred-IT Assured Field With 'Main' Risk Name,0.1
+XXXX SCM super search changes,2.5
+USM field access not working,2.5
+Combo Box not sizing properly with left label alignment,1.5
+Signing information needs to be greyed out,0.5
+SCMS Support: XXXX Live SCM Validation Error On User Run,1.0
+YYY ZZZ - XXXX Support - Correct Message Loaded With Incorrect SCM User Number,0.25
+YouLink HR: CCC Client Trial Setup,1.67
+Incorrect column alias in XXXX XLsior Export,0.5
+CCC - Reports Logo Updates - Query,0.25
+Populate RISK_Section,12.0
+XXXX Message which was not loaded needs to be loaded,4.0
+Add Diary event for when Risk or RI is actually deleted,0.7
+Swap everyone to YouLinkHR-Direct,1.7
+CCC - Support (Query on Risk Super Search and User Setup process),2.25
+Hybrid form advance tab page does not disable when business object opens,2.0
+V3 - Generation of AddChildSpecific needs re-structuring,2.0
+SCMS v2 XLSior Extract Output Format Testing,0.75
+Bordereau Back Loader on 02/02/2007,0.25
+Audit History Tab in the SCM Entry Form,1.5
+Make triangles printable,16.0
+Populate SCM_Original_Currency,4.0
+Checking In Code / Merging Databases - YYY ZZZ (June),4.0
+RI Proportional Calculations Split Error,2.0
+DAD System UI Modifications,3.0
+Task Search - Category And SubCategory Need To Search In Text Not Codes,0.5
+Release Technical Core v 1.6.2166.28850,1.5
+RI Layer Stats Not Filtering Properly On Layer Change When A RI Layer Stat Changed,7.0
+Flex Mobile - Sorting Bug Found In Data (non-billable),2.0
+Search group control: optimise behaviour when selecting group from drop down,0.7
+Review Period Close,7.5
+Check that line event auto zero not putting bogus figures on Euro claims,3.5
+SCMS v2.2 Code Review And Check-In,7.5
+SCMS Support: Hot Fix Deploy On XXXX,0.5
+CCC Testing: Manual Claim Entry Requires Market Cat Field To Be Entered,0.5
+Double check usage and display of new money fields,4.0
+XXXX Front End Changes Required For New Field SectionUMR in table RiskSection,1.5
+BMS Support for week 1/09/08,7.0
+Releasing current changes CMSHQ1,2.75
+Making e-mail functionality work in comparator,1.0
+Bordereau Back Loader on 26/06/2006,0.33
+Bug fixes in Stored Procedure Renamer,3.0
+"Tidy metadata, check and debug basic functionality on new DEV",5.0
+Bordereau Back Loader on 11/12/07,0.33
+XXXX Run and monitor conversion 19082005 needed for parallel running,10.0
+Bordereau Back Loader on 09/10/07,0.33
+XXXX Support: Period Close Check - Force Through Items,2.0
+RITC - GotoMeeting with YYY ZZZ To Discuss Various Requirements For Movt. Data Mart Extract,2.0
+XXXX Test Systems Message Load Job Setup,2.1
+Super User Mode can't add/delete children when Risk is Signed,2.0
+Reviewed Reference and Code Generator database and Code,3.0
+Add an Execute button for individual tasks in a block,2.62
+Holiday Taken / Remaining Report,0.95
+Adding new Status Transition data to navigate to 'Not Taken up',0.5
+Adding new event on SCM with no events points to total instead of new event,8.0
+CCC/CCC Support - Risk not saving,1.0
+XML Code Generator - Bug Fixes,5.55
+Testing Risk System,5.75
+Populate Risk_Name,7.0
+Check that triangulation RI is calculated correctly (particularly RI Outstanding),1.75
+SCM Validation not always updating/checking Line Events correctly,9.0
+USM Split: various enhancements bugs (see Plan),2.0
+Check that switching tabs does not clear fields in report form,6.5
+"Section Premium table, GPI Row first, EPI 2nd and BPI last",0.5
+"Single Line DEC row, remove and add fields",1.0
+Editing Report (Figures Book SiP) to display large sums properly,2.0
+Implement Processing Date and Closing Rules,1.5
+Releasing the DEMO systemo to LIVE,6.0
+Add declarations on carried-over risks into Risk_SectionDeclaration,1.0
+YouLink HR: CCC Demo Account,1.22
+E-HR Various Bug Fixes,1.59
+XXXXSynd-Talk To YYY ZZZ/YYY ZZZ-Add Fields Req. On RILinkedSCM,0.3
+Link PQN - Software release,5.0
+Licence Server machine Documentation,1.5
+Unexpected Period Close RI Quota Share errors,2.5
+Miscalculated RI on XXXX v2.0,1.0
+Investigate and fix figures difference between XXXX Dev and Live Warehouses,9.0
+Get YLHR Web Site Running On My Machine,4.44
+YYY ZZZ Synd XXXX/XXXX - Periiod Close Support,1.5
+"Add Actual Payment Date, Load Date to SCM",0.5
+Double clicking in the declarations grid generates error,1.0
+Add Functionality To Show Icons On The SiP Tab Control TabPage,1.25
+DAD Support,9.5
+Screen Auto Caching & Build of Screen Has Started To Fail Miserably,6.25
+Weekly Developer Meeting 13th June 2008 - LINK Management,8.0
+YouLink HR: Working Patterns,13.46
+Ref Broker Table Update From Lloyds Website To All Test Syndicates,1.0
+V3 - Dates not displayed upon load in text boxes,0.75
+"Complete SCM Search, Supersearch",13.5
+Testing SCMS v 1.10,20.25
+Bordereau Back Loader on 13/04/07,0.66
+Weekly Developer Meeting 13th June 2007 - Encryption of Stored Procedures,10.5
+Improve query data entry functionality,9.25
+Risk Premium Report,6.23
+Figures book analysis for XXXX to investigate data differences,18.4
+Claim summary report 'Loss Details',0.5
+USM Search - The Statistics Search Fields Doubling Up,0.35
+SCM Unexpected New Line - Please talk To IT Bug,0.75
+CCC RI Development - COB Stat Codes On Contract Ref,3.5
+BMS support for week 14/07/08,7.0
+RDC Quick Entry Bug. Section Premium Causing Stack Overflow On New Fields,13.25
+Exclude from validation - must work at a movement level,1.0
+BMS Meeting with YYY ZZZ and YYY ZZZ at SiP Offices (12/03/08),2.0
+Risk Super Search not always linking USMs and SCMs to their stats,0.5
+Clicking Column Sort On Event Search/Detail - Linked SCM Tab Results Grid Causes Exception,2.0
+Event Change Caused Form Event Not Handled - Load Completed Exception,1.05
+Diary Event Recipient List Failing To Populate,1.75
+Bordereau Back Loader on 05/10/07,0.33
+YouLink HR: Unable to Delete Reporting Line With No Assigned Current Staff,3.14
+Build New SiPFrameworkMultiControl Control,26.5
+CCC - Aid Month-End Close,1.0
+v1.10 Test Systems USM Message Load Checks - Investigate & Resolve USM Load Fail,1.5
+Fix update Meta Data row bug in SQL Comparator,0.5
+Diary Event Summary Field - Switch To Editable Combo,7.0
+2 wk Ext. Licence Upload - CCC,0.25
+YouLinkHR: Add Auditing To AutoCombo Box New Entries,23.56
+LDEX Loader fails with error dialog,1.0
+Windows PowerShell: Script SQL2008 Databases Into SourceSafe,9.48
+Release Technical Core v 1.6.2120.17507,0.75
+Existing Database To SIP Loader Database Conv Scripts -- XXXX,21.5
+UCM Load broken in .NET 2,3.0
+Build Licence Server Base Project Structure,5.34
+Data Warehouse & Table Reindexing,0.5
+SiPDatabase Objects naming convention,20.0
+Mouse Down event sometimes not firing after mouse up event,1.4
+On-Site CCC Support @ New Office,1.0
+Event rows on one currency only when adding manual movement to multi-currency claim,1.5
+Generate CSV Scripting and Data Files In Correct Areas,2.5
+Searching a USM on statisitcal code fails,1.0
+CCC - USM Super Search Results Query,1.75
+Weekly Developer Meeting 03 2007 - BMS Provision,10.5
+Risk not opening.,1.4
+XXXX Raw data capture from reflection,4.0
+Switch XXXX SCM Split check to nett close - check field accesses still work,3.0
+Linked business objects not opening from nested hybrid forms,1.5
+Error viewer not working with nested forms (Versions 2 and 3),4.5
+SiPDocument - Add Statistics,33.25
+Flex Mobile - Sale Paid Date Needs To Be Updatable via Super User,0.5
+Flex Mobile - System Reported To Be Down Following EJC Server Updates And Reboot,2.25
+Provide Functionality To Show Referenced Names As ToolTips Inside The Grid,3.25
+Adding Validation error if 2 EPI columns are entered,1.5
+Invalid Length Authoriser_2_EMail - Field To Small,0.78
+LinkEX Monthly report bug with Special Fee courses,5.0
+SCM save split not taking into account Multiple lines,14.0
+Enhancement to MFR report,3.5
+Code Generator: Rejigging Core Stats To Be Non Lloyd's Specific,10.1
+YYY ZZZ's Updates Added - Latest Version Compiled And Released To Synd XXXX,0.5
+V3 - Double clicking on headers on grids with no rows causes exception,0.5
+Bordereau Back Loader on 30/05/07,0.33
+Attempt to open non-RI rows in RI Amounts grid on SCM causes exception,1.5
+Table structure grid throws exception when Escape key pressed,0.75
+Outwards Claim Ref Needs To Be Shown On USM Grid,3.5
+Bordereau Back Loader on 19/11/2007,0.33
+XXXX System support,3.0
+XXXX Message Load Structure Orgainsation To Allow Sip To Handle USMs,1.0
+SuperSearch - Bug on able to SUM non numeric columns - See Plan,4.0
+Re-analyse tasks to see what is needed for v2.1,4.25
+Check-In latest code / Merge databases,35.8
+Flex Mobile - Meeting with YYY ZZZ (new manager),2.5
+Premium Line % and Written Line % on Line not used,0.05
+Remove decimal places on values that are of money type,0.5
+YouLink HR: Document Management - Allow Updating Of Meta Information (incl Security),10.13
+CCC Licence Renewal - Set To Expire End Of June,0.33
+Catch all tasks,0.5
+User Support: Claim User Audit Notes Bug v1.10,1.0
+"When adding a dec, RISK_SectionTypeDeclaration is not added.",2.5
+Claims Audit Notes Restore Where Users Exceeded 8000 chars,1.0
+SCMS Support: XXXX Validation Errors - Auto-Correct/Force Specified Errors,0.5
+User Support: XXXX RI Quota Share Period Close Check Failing,1.5
+Release V3 Technical Core and SCMS,13.0
+YouLinkHR - August 2011 - Bug Fixes and Tweaks,14.97
+Save errors on Market Adjustment trying to insert into VATClaimOrig,1.0
+Get Working Local Copy of Dev To Merge YYY ZZZ's Changes After Meeting YYY ZZZ,0.5
+Investigate Performance Of Nested Controls plus Misc Bug fixes,5.25
+XXXX Test Invalid Machine Name Licence Error,0.5
+CCC - TS CAL Cost and Non Logged-In Users List Request,1.75
+LinkEX HOD Install and Training,1.5
+CCC - System Metrics Queries,2.75
+Move After Update Events Into Database Rather Than Relying On Silverlight,2.86
+YouLink HR: Add CPPD Activity Type Reference Manager,3.04
+Get SP_USM_CONTRA_UNDO to work with new USM Structure,4.5
+Add error-handling to Search Control so it doesn't crash app if lookup values bad,0.7
+Change Task System Search for YYY ZZZ,1.25
+USM Super Search - Stat Code Return Fields Not Showing In Return Values,0.25
+Flex Mobile: Repair docket to allow non-customer repair entries,22.25
+Meeting with YYY ZZZ to Discuss Scorecard Functionality,1.0
+XXXX triangles have figures with no II Groups,4.0
+Add Broker Ref A and Actual Payment Date columns to Closing Search,0.5
+Not saving additional Line when saving.,0.5
+"On claims with line events on early movts, split on later, line event not cancelled",2.5
+"Flex Mobile - Release - Tasks 11706, 11707, 11719, 11720",9.5
+Investigate SCM Validation errors on Live Test systems,15.5
+Add option to let LDEX Loader run with no SQL Transaction,1.0
+System Upgrade Issues Reported By YYY ZZZ,0.25
+CCCs Staff Migration,9.71
+Adding Link grid column inserts into stored procedure,1.0
+Check that audit on all tables is visible in relevant form,2.0
+Document USM Changes for circulation to users,1.5
+Flex Mobile - Accessory ID - Request to have it display on Detail and Search Screens,3.0
+v2 User Testing: Updating Line Event Flags Cannot Add Same Event Twice Msg Always,0.5
+Outstanding SCMS Tasks Review,1.0
+Search Control: Bugs when using append mode with LIKE operator,3.5
+Event Code Entry Needs To Refresh Cache,4.0
+Testing current version for DEMO at Gloucester,2.5
+CCC RI Development - Save Procedure Updates To Ensure It Works For All RI Data Entry Pos,7.67
+CCC - Aiding 111 audit for CCC (SCMS),4.25
+USM Message Load Warning Messages Investigation,0.5
+"Improve Underwriting Reference processing on Claim, Cash and Closing Screens",11.5
+Query Search Screen Development,12.25
+Finish off XXXX RI Conversion,8.75
+Bring XXXX format triangles into line with v.1.10,9.5
+SCMS User interface optimisation,28.5
+Check for references to obsolete table RISK_LineCalculation,2.5
+Issue with SiPFrameworkComboBox in Search Control,2.0
+SCM Validation : Delete Duplicate Data Should Call Sub Procedures Dynamically.,14.0
+App can crash when closing forms,0.5
+"Section Max Period should be number field, not date.",0.25
+DAD System Bug Fixing,7.63
+"Export is exporting 0's as =""0.00"" in Tech Core",1.75
+Add Description Column to RL Risk Codes,3.5
+CCC - Dairy Event Recipient Update,1.0
+Get XXXX Conversion running right through (output database will become test),7.5
+E-HR v2 Client: CCCs 2012,6.32
+SCMS Support: re-add deleted dummy risks by YYY ZZZ on synd XXXX as they have claims linked,1.25
+Tab pages on hybrid forms not getting removed properly,2.5
+YouLink HR: Client Setup CCC,1.62
+Code Gen Review and Questionnaire,4.0
+Bug: Export Function On Reports Not Working,1.5
+XXXX Daily Movements Excel Format Report Showing Incorrect Advise Date,1.0
+Running Scheduled Tests on SCMS,25.5
+Bordereau Back Loader on 13/08/07,0.33
+Checking in changes to the Task System and Releasing Task System.,11.2
+Flex Mobile - Document Type Updates,0.75
+XXXX Warehouse not matching USM Search,1.25
+Synchronise v2 database with recent updates elsewhere IN SCMS,9.5
+V3 - Grid and Business Object Currency Managers out of Sync on Certain Grids,13.0
+Show Event number on left hand side of screen instead of word 'maintainence',10.5
+XXXX Daily Claim Movement Report - Scheduled Send Setup For YYY ZZZ And YYY ZZZ,0.5
+SCMS User Diary Event Issue Reported,0.5
+[ V3 SiPDocument ] On a check in the change from a single revision document to a multi revision document does not flush to the database,0.75
+YouLink HR: YYY ZZZ - Excel Import,1.48
+Adding SectionPremium data from RAW CCCs XXXX conv,4.0
+XXXX Pre Post Release Backups,0.25
+SCMS User Support: XXXX Claim Review Notes Put In 'Undefined' State,0.5
+Task search results grid doesn't show up/down sort controls on column header,0.75
+Change LPSOVersion to char(2) (with leading zero),0.5
+Add Delete Trial Data System Action for Office Managers,3.96
+Allow auto-update of some reference tables (esp. REF_Broker),4.0
+YouLink HR: Investigate Overnight Maintenance for Speed,0.98
+XXXX SCM Validation Failing To Remove Duplicate Line,7.0
+[ V3 Office Intergration ] Added IsCheckIn and IsCheckOut fields,2.0
+XXXX Warehouse: column mismatch between table and procedure,0.5
+SiP Code Generator: Spike - Add Files Directly Into Projects,3.0
+Forms won't load due to Environment.CurrentDirectory getting changed by Document,0.75
+SiP Admin - CCC SCMS DBs Old CCC/CCC Users Diary Events Clean Up,0.75
+Risk Code Breakdown not filtering per line,1.5
+Released version of DEV to TEST ready for testing Master Risk Functionality,1.25
+XXXX Test - SCM Validation Failed,3.0
+Field accesses for movements not reliable on Manual claims,0.5
+Bordereau Back Loader on 18/04/07,0.33
+Filter Bug,3.5
+SCMS Support: Close Period For XXXX In YYY ZZZ's Absence,0.5
+Daily Movement Report - Add Message Ref To Header To Display On Every Page,4.0
+Add Policy ID (Declaration reference) to short and full decs,7.25
+Upgrading BMS to be SCMS Compatable,9.5
+Error Control Not Jumping To Fields When Entering a Manual Closing,1.5
+Reinstate SiP Auto Cleardown of SiP-DEV Shared File Area,1.75
+Allow Documents To Be Deleted By The Role Member roleDocumentManager,0.1
+Ledger Codes to be at Claim level only,2.0
+Date Picker remains visible on Text Box when field access changes to read-only,0.75
+Adding Licence Check to DataLoader,11.0
+CCC Support - YYY ZZZ PC Intermittent SCMS Problems Investigation,2.0
+Diary Event Report - exporting to pdf has expected blank pages.,0.5
+YouLink HR: Delete CCC and CCC Ltd,1.16
+Loader check for LDEX User not working,0.5
+RI Figures/Nett Position Differs On Search Screen To Claim Entry Screen.,1.75
+YouLink HR: Equipment Report,14.9
+"Validation Errors in no order, and they jump around when you add/remove one",0.7
+USM Reconciliation Report ignoring Synd No parameter,0.5
+Code Generator: Improve XML BO Output to use Attributes,1.0
+Various Technical Core Enhancements (July),1.05
+Weekly Developer Meeting 25 April 2007 - Data Loading Procedures,10.5
+SCM Message Summary Search Issue,0.25
+YouLink HR: Generic Support,0.87
+V2/V3 Button Column Headers appear in Column Ordering dialogue,1.0
+YouLink HR: Find Easy Way To Sort Grid Column On Load Without Changing Underlying Container,4.19
+CCC System Testing,17.0
+Sorting out XXXX Claims Figures,31.92
+CCC Permission Bug Reported On Raw DSign Super Search Country Parameter Select,0.25
+Setting up Conversion Databases Locally,0.5
+Sort out SyndLine No on newly added lines,1.0
+Testing Latest v2 Developments/Bug Fixes Completed.,3.5
+Breach percentage should have range of 0-100% as validation,0.5
+Daily Movement Reports - Monday's and Tuesday's Reports Send Out,0.5
+SiP Code Generator: Auto Manage Permissions,26.0
+Bordereau Back Loader on 25/06/2007,0.33
+Placing Binder Management Into SourceSafe,9.0
+Period Close RI Calcs check does not ignore excluded claims,0.5
+Business Object: Automatic Filtering Bug,0.4
+Allow ListBoxWithImages control to show only images and use a tooltip,4.25
+CCC Migration: XXXX/XXXX UAT Iteration,3.0
+Negotiate test messages with Xchanging + resulting minor updates,4.5
+XXXX Version 2.2 Live Manual Claim with incorrect data ClaimRef:00012010199,2.0
+Correct 'Unexpected New Line' Error On XXXX Test and Live,0.5
+V3 - Linking functionality not working correctly,9.0
+Transfer XXXX Reconciliation Report to Test and add Drilldown,8.5
+Add a system option to control deletion of de-linked items during USM Validation,0.7
+"USM Split -- Add Trust Fund Column. Make It Viewable,Editable In Front End",3.0
+Adding events to an SCM on XXXX takes too long,22.25
+Remove Adj column from Limit and Excess,0.05
+Duplicate Rows Appearing On Payment Matching Screen,0.5
+Flex Mobile - Meeting to discuss requirement for new tasks,1.75
+Task System : Add Facility To Add A Block Of Tasks,7.0
+XXXX Test System Message Load And Validation Jobs Setup,1.5
+Sync XXXX Dev With Latest Developments To Make It Work Again With Latest Code.,1.0
+Enter /Update/Delete Reinstatements - adding two reinstatements fail,0.5
+FLEX Development Process: Reviewing TFS Branching / Merging,1.0
+OS Figures not getting updated on Movements,2.5
+CCC Messages And Close Issues,2.0
+USM Contra Items Nett Amount Field Access Incorectly Set For New USM,0.5
+XXXX Incorrect movement order cref: 60XXXX80797,2.0
+SiP v3 Code Gen - Getting Linking Mechanism to Work,6.5
+RITC - Weekly Report Bug- OS Movt Needs Reserve Override If Exists Like OS Positon,1.5
+CCC Core Bug Fix - Testing And Check-In,1.25
+CCC Content,3.0
+USM Line Layer/Risk IDs Not Updating On UWRef Change Via Super User On Posted USMs,3.0
+XXXX Test System UW Ref Correction Table Incorrect Entry Check,1.5
+Tag Wizard Bug Fix,6.67
+Introduce YYY ZZZ to the Period Close,2.0
+Restore Claim Details from Oasis,6.5
+Going through and checking Risk Calculations - Signed/Unsigned Calcs,16.0
+Clean Code Generator Presentation Layer,19.98
+Cannot add new USM Narrative,1.5
+YouLink HR: Working Hours Issue,1.18
+CCC - USM fields requested as required confirmation,0.75
+YouLink HR: Adding Notes To Active Sickness Closes The Record,5.5
+Colour Binding Spike within WPF Front End,3.19
+Expiry Date allows date to be enetered prior to Inception,0.75
+Fixing memory leaks in Document,2.0
+Move UWRCorrection Field Access out of REF_META_FieldAccess,1.7
+Cannot Add New Event - Save Fails,1.75
+Claim Refs not updated to full-length strings on child tables,1.5
+Compiling BMS for updating to v3,4.25
+Release Coverholder/Audit TEST System,1.0
+Document USM column changes and put in Knowledge Base,2.0
+Outstanding figures getting updated to value other than that they are set to,3.0
+XXXX Front end syndicate figure splits presentation bug,1.75
+CCC - Data Mart - Supporting queries raised by PD on Movt Extract.,5.25
+Multiple events attached to an SCM are deleted when a duplicate is added,15.5
+User Manual for LDEX Loader,1.0
+Tune SCM Validation,18.5
+XXXX Release Tests /Job Checks.,0.45
+Customer Screen - Double-Click linked Sales to open,0.5
+XXXX SCM Claim Issue On Adding Manual Movement,5.25
+Test System USM Period Close Bug,1.0
+XXXX SCM Split Complete Check Updated For Only Latest Movements,2.0
+Tracking and fix Risk bug reported by YYY ZZZ,4.5
+Meeting at Lombard Street for Binder Management,1.62
+YouLink HR: January Release - Bug Fixes,20.38
+SCM Search with Event IS returning no results,4.5
+Error saving risk - limit qualifiers,1.5
+v1.10 USM Search Totals Bug Where USM Split Amounts Exist,0.5
+Release Task System,0.75
+Saving Doc's causes Error on SetFormCpation,1.25
+Bring SCM Loader into service,24.0
+Demonstration of Database to YYY ZZZ,0.5
+"When changing Sections, Premium table not refreshing Field access",2.75
+Lloyds Currency Only Triangles,1.75
+Diary Event Field Access On Delete Not Correct.,3.0
+USER SUPPORT - YYY ZZZ not able to save RISK's,0.75
+Front end using incorrect calc when checking RI,4.5
+On Period Close Report All UWRef Changes On Claims In Open Month For User Review,7.25
+XXXX manual movemennts correction,1.0
+Investigating why LLOYDS SCM messages failed to arrive on LDEX box this morning,2.0
+Effort Type Error,0.37
+Field Access Not Getting Set Correctly In Code Generator for new BO's,1.5
+Loader to check licence,12.5
+Master and Child Facility Recording - Adding BPI's together that exist as Children,20.75
+Daily Claims Report Not Working On XXXX Test.,1.0
+XXXX's USM Splits need sorting out,4.5
+USM Validation correcting UWRefs that are already corrected,5.0
+RI Period Close - working out what it should do when line changes (XXXX),6.0
+Interaction of period close and SCM Validation may need attention,1.0
+SCM Save not working,8.5
+YouLink Testing Absence Booking,4.74
+XXXX Test Release - Push Up Latest v2 Release Files.,0.5
+YYY ZZZ - XXXX USM Super Search - Add DTI Code - Extended to add Orig CCY Ind/Amount,12.5
+User Support: USM SuperSearch search Field FILCode Lookup Incorrect,0.25
+Various Updates to Splitter Control,2.5
+V3 - Top row not selected in grid after doing sort,2.0
+Sort out naming of USM Rate Of Exchange Original Signing fields,0.5
+Synd XXXX has incorrect event split validatioin error,3.5
+Bordereau Back Loader on 03/05/07,0.5
+Difference Count in SiPComparator is incorrect,1.75
+CCC System - Test And Check-In Latest Bug Fixes,2.0
+SCMS Support: Remove CCC Reference From Search And Risk Screen,0.25
+Adding BMS to own BMS Project in VSS,1.5
+Seperate the Schedule tables out in BMS depending on class of business,4.0
+Certain XXXX Claims fail to open,3.0
+WebControl Enhancement,1.87
+V3 - Validation Error tooltips not appearing,0.5
+XXXX Validation failure - UW Refs in msg causing failure,6.0
+Bordereau Back Loader on 14/11/07,0.33
+Stats Code Lookup Not Working,0.25
+Diary Events - Functionality to Clear/Check all diary events in previous versions of warning window not present,1.0
+Synchronise Diary Event Changes From Demo,3.0
+Request For New Document Types For Risk/RI/USM,0.5
+SiPDocument - Hold Compression Data,10.25
+XXXX and XXXX Statistics not being displayed in version 2,3.0
+Convert Task System C# Code from .NET 1.1 to .NET 2,3.34
+Merging in YYY ZZZ's latest work.,9.0
+Modify Workflow Scheduling,8.34
+V3 / V2 Exceptions when attempting to close form during long saves,9.5
+Creating manual claim to handle an SCM with two settlement currencies in backend,1.0
+[ v3 SiPDocument ] Category selector loses values on the fourth and filth combo box for selector 3,4.0
+v2 SCMS/Core Check-In And Release,0.5
+XXXX Live v2.1 - Opening Risk Flags SectionTypeCode Lookup Error,0.5
+Update Risk_SectionLimit,1.0
+SIP - Setting Up Server Licencing - Issues,3.5
+Bordereau Back Loader on 19/03/07 - Interim Load Request,0.5
+"Synchronise Binder Management, PRD and local",5.0
+New rows in the diary event for the SCM are read only.,0.7
+SCM Manual Movement On Manual Claim (bur 'U') Should Allow Lloyds Figure Entry,3.5
+Adding years 2009 and 2010 to CCC system,0.4
+Add Underwriting Reference lookup/check and Open Risk user action to Claim,7.5
+Comparator could do with a stop button that can cancel a search without crashing,7.0
+CCC - Payment Validation Issue Raised,1.0
+Add processing status field in payment searched,0.5
+XXXX Conversion - Stats,12.75
+Default line event functionality lost and needs re-introducing,1.5
+RITC Data Mart - Bug - Some Historical Months Fail Load Due To Exchange Precision Differences,2.25
+Look into LIRMA ILU Message Formats,13.0
+Fix column widths in XXXX XLsior Export,0.7
+Payment Forms Don't Check To Close when Shutting Complete Form,0.75
+Merging document into SiP_CodeRepository,21.25
+Task XML Notes Requires Roles Setting Up,0.1
+Schedule Task Effort Report To Run Automatically @ 17:00 and 23:00,1.0
+CCC - Reports login failure reported,0.75
+Autocorrection populate doesn't work,1.5
+RI missing Stats when opened from USM Line,1.5
+v2 User Testing: Manual Movement Entry Should Allow OS Figures Entry Directly,0.75
+CCC - Data Mart - Movt Extract Calculating Paid To Date Orig Incorrectly,2.0
+YouLink HR: Skills Tweak and Obscure Bug Fix,1.8
+SCMS CCC Support - certain users reported search not working for them,0.25
+Backup Release Pre/Post Versions To Disk - XXXX Synd,0.75
+Add Claims Dept. YYY ZZZ/YYY ZZZ On XXXX SCMS,0.5
+CCC Support - Licence Key For PC With Windows Re-Install,0.25
+Adding Multiple Documents at once,17.75
+Run XXXX Conversion,2.0
+Look Into Test System Validation Issues Flagged By User. See Plan,2.0
+Cleaning Up Old V3 Code In SourceSafe,13.0
+Created Routine To Determine Correct Authoriser or Reports To Name,0.56
+Allow hybrid forms to contain other embedded hybrid forms,3.0
+Implement Auto Search Capability on First Log On,5.5
+Fixing some issues in the XXXX USM Narrative regarding line numbers,2.5
+Dsign Processed By / Date Fields not 'fixed',2.44
+Requirements Management for Ledger/Accounting,3.5
+Remove Loss Basis from Section,0.05
+YYY ZZZ scrollbars on SCM on some user machines,0.5
+Estimating Borderaux Management and Premium/Claims Recording,2.75
+Comparator: accompanying procedure gets triggers wrong,0.5
+CCC System Release - 2.2.3058.29421,13.75
+SMTP server change for reports failed on HQ1,1.5
+"Moving Diary Event Changes to DEV, Core and SCMS",1.5
+RI USMs sometimes error on opening,0.5
+Bordereau Back Loader on 28/09/07,0.33
+Stats search joins not right yet,2.0
+Meeting With YYY ZZZ Regarding New RDC Version,0.5
+55/XXXXTest SCM vaildation failed,9.0
+XXXX User Support: Aid YYY ZZZ's SCM validation errors corrections,2.0
+Staff Manager Connection Issue,3.15
+BMS Webform - Changes after initial demo,9.5
+Conversion script sometimes gets stats keys wrong,0.5
+Added two extra columns to Document Search grid,0.25
+SCM Search and Supersearch: Accounting Month not handled correctly,1.0
+Print Grid to show 'Friendly' Column Headers not Technical Column Header,6.5
+Remove leading zero's from Orig LPSO No on USM,0.7
+Line Premium Income - can't save when ESD% changes,2.5
+Bordereau Back Loader on 11/01/07,0.5
+Improve BO Filtering To Allow Multiple Parents for Intersection Tables,7.52
+Stats control title is poorly formatted,1.75
+Install NUnit for C# 2005 and Test,7.0
+Diary Events Losing Detail Textbox When Viewed In Business Objects (eg SCMs),1.0
+Add Bureau Signing Details to Warehouse (from USM and SCM),7.0
+Flex Mobile: User reported error accessing reports,3.0
+Testing/updating/fixing Risk for DEMO on 20th March,17.75
+Meeting with CCC re Messaging,21.5
+Event codings changed on XXXX,0.5
+CCC-SCM Lines Update To Point To Risk Lines With Updated Risk Code/Reserving Group,12.25
+YYY ZZZ - XXXX Support - Delete Incorrect Synd XXXX Messages Loaded In 200805 month,7.5
+v2 User Testing: Manual Movement Entry Fails To Save.,2.75
+Risk Section Fields Area and Basis/Loss Basis need sorting out on XXXX,3.5
+YouLink HR: Work EMail Address Greyed Out For Office Managers,0.22
+SCM RI to be filtered per Line,5.25
+Document Fixes,5.58
+Sun Account to include Ledger,2.5
+Staff Manager: Holiday Booking Enhancements,3.73
+XXXX Conversion to v.1.10,1.0
+Clicking on RI Reinstatement Tab causes fatal crash,1.75
+XXXX New 1.9 Test Warehouse Build/Compare Figures With Live,2.5
+"RI Type Error, adding 'unknown' to drop down",3.0
+XLsior LORS Export not handling payment dates correctly,0.5
+SCM Stat Search Bug On XXXX Live,1.5
+Assured 'Main' indicator needs to default to 'tick',1.5
+RI Short Description - not always reset when wrong,1.0
+Splitter bar in the Report Suite window not corking correctly,1.0
+Duplicate Controls On Searching On Risk Screen,0.5
+Add Filter to Comparator to select specific items to compare,14.0
+Flex Mobile: Sale search to bring back Tariff description.,5.0
+REPORTING - Latest version of BMS core has broken reports window,2.4
+CCC System New Users Setup With Access Levels,0.5
+Event update puts wrong figure on new event,1.0
+Code Generator Versioning,17.25
+Maybe Useful To Have Link On Risk History Grid To Open The Other Risk YOA,4.9
+Openng RI Causes Exception /Adding Layer Fails,1.0
+Row colouring after performing a search not working correctly,1.0
+Incorrect icon shown when user cancels auto refresh dialog,1.0
+Flex Mobile - Sale Search - Credit ID parameter search required.,7.75
+V3 Risk Port - Adding/Deleting Sections not Calculating properly,8.25
+CCC - Exception On Drop Down Selection Reported,1.5
+Validation errors won't go away when shutting down a document with validation errors,0.5
+Bordereau Back Loader on 19/07/07,0.33
+LinkEX Search error with conflicting temp tables.,3.5
+Bordereau Back Loader on 05/03/07,0.25
+Rendering C63 report to Excel,7.0
+Hide LDEX Message Menu Item From Reference Menu For v1.10,0.5
+Create Mobile Phone POS Tariff Business Object,3.5
+Review Binder Management Progress With YYY ZZZ and Check His Development Of The Grid,2.0
+Can't use backspace key in amount boxes in Payment Matching,0.25
+User Actions not working correctly with nested forms in Versions 2 and 3,6.25
+Add extra columns to RiskBorderauxSchedule,2.5
+XXXX Period Close Errors On v2 Live - Resolve,0.5
+BMS Speedup with Declaration Stored Procedure,1.5
+Bordereau Back Loader on 30/03/07,0.25
+Eurobase USM Data Master Backup,0.25
+Reference Table Data Should Not Show Projects Client Is Unauthorised To See,0.33
+Bordereau Back Loader on 25/01/08 (Yesterday's file load),0.33

@@ -1,0 +1,21 @@
+task_description,base_hours
+CCC100 Essays (e.g. explain why computer literacy is vital to success in today's world.),1.34
+"CCC100 Programming Activities (Basic HTML, CSS, PHP)",2.53
+"CCC102 Programming Activities (Java, OOP)",2.4
+"CCC124 Problem Sets (Algorithms, Big-O)",2.52
+"CCC124 Programming and Essay (Prim's, Kruskal's, Dijkstra's, explain why these algorithms work in certain areas etc.)",2.34
+"CCC151 RDBMS Review (write a review, and then compare and contrast on: MySQL, PostgreSQL, Oracle, SQLite, etc.)",2.11
+CCC151 SSIS (Full Application Project w CRUD Functions),43.89
+CCC151 SSIS v2 (Improvement from original site with Searching Sorting and Pagination),30.31
+"CSC181 Group Project (Full Website project w CRUD functions, Searching, Sorting and Pagination)",86.56
+CSC151 Group Project (Full Application with CRUD Functions),49.0
+CCC181 Web SSIS,40.0
+"CSC175 Programming Activities (SIMD Models, Parallel Programming, collective communication)",4.66
+LC3 Assembly,3.07
+Haskell Programming (145/193),3.04
+CSC133 Paper Writing / Final Project (Modeling and Simulation),71.99
+"CSC194 Final Project (Computer Science Seminar, Research paper on Various topics)",48.54
+"CSC133 Group Presentations (ABM, SIR Models, Monte Carlo Simulations)",4.2
+"CSC 194 Key Insights (Situation Awareness, Genetic Algos, etc.)",1.63
+"CSC 113 Programming Activities (Running Socket Servers, Modifying Socket Servers)",4.22
+"CSC186 HCI Activities (Human - Computer Interaction, Figma Prototyping and Design, Analysis of Design Choices)",5.22
