@@ -1,3 +1,4 @@
+import argparse
 import os
 import json
 import torch
@@ -12,14 +13,32 @@ from transformers import (
     DataCollatorWithPadding
 )
 
+from text_utils import clean_text
+
 # ----------------------------------------------------------------------
-# Settings you may want to change
+# Command-line options (all optional; defaults shown)
+#   python train.py
+#   python train.py --train data/sip_train_aug.csv --save-dir ./saved_model_v2
+#   python train.py --no-clean            (reproduces the old behaviour: no text cleaning)
+# NOTE: data/sip_test.csv is intentionally NOT loaded here.
 # ----------------------------------------------------------------------
-TRAIN_PATH = "data/sip_train.csv"
-VAL_PATH = "data/sip_val.csv"
-NUM_EPOCHS = 5
-MODEL_NAME = "microsoft/deberta-v3-base"
-SAVE_DIR = "./saved_model"
+parser = argparse.ArgumentParser(description="Fine-tune DeBERTa to predict task hours.")
+parser.add_argument("--train", default="data/sip_train.csv")
+parser.add_argument("--val", default="data/sip_val.csv")
+parser.add_argument("--save-dir", default="./saved_model_v2")
+parser.add_argument("--epochs", type=int, default=3)
+parser.add_argument("--model-name", default="microsoft/deberta-v3-base")
+parser.add_argument("--no-clean", action="store_true",
+                    help="do not clean the text (collapse repeated letters, spaces, lowercase)")
+args = parser.parse_args()
+
+TRAIN_PATH = args.train
+VAL_PATH = args.val
+NUM_EPOCHS = args.epochs
+MODEL_NAME = args.model_name
+SAVE_DIR = args.save_dir
+CLEAN = not args.no_clean
+LOWERCASE = True
 
 # Detect best available compute device
 if torch.cuda.is_available():
@@ -39,6 +58,15 @@ for p in (TRAIN_PATH, VAL_PATH):
 
 train_df = pd.read_csv(TRAIN_PATH)
 val_df = pd.read_csv(VAL_PATH)
+
+if CLEAN:
+    # the SAME cleaning is applied in inference.py to whatever the user types
+    for d in (train_df, val_df):
+        d["task_description"] = d["task_description"].map(lambda t: clean_text(t, LOWERCASE))
+    print("Text cleaning ON: repeated letters collapsed, spaces fixed, lowercased")
+else:
+    print("Text cleaning OFF")
+
 for d in (train_df, val_df):
     d["log_hours"] = np.log1p(d["base_hours"]).astype(np.float32)
 print(f"Train rows: {len(train_df)} | Validation rows: {len(val_df)}")
@@ -103,7 +131,7 @@ training_args = TrainingArguments(
     load_best_model_at_end=True,
     metric_for_best_model="mae",
     greater_is_better=False,
-    logging_steps=50,      # was 5; fewer log lines now that there is more data
+    logging_steps=50,
     save_total_limit=1,
     fp16=False,
     bf16=False,
@@ -140,9 +168,10 @@ if __name__ == "__main__":
         if "eval_mae" in log:
             print(f"  epoch {log['epoch']:.0f}: MAE {log['eval_mae']:.2f}  RMSE {log['eval_rmse']:.2f}")
 
-    # --- save the best model ---
+    # --- save the best model + what inference needs to know ---
     trainer.save_model(SAVE_DIR)          # saves the best model
     tokenizer.save_pretrained(SAVE_DIR)
     with open(os.path.join(SAVE_DIR, "label_stats.json"), "w") as f:
-        json.dump({"mean": LABEL_MEAN, "std": LABEL_STD}, f)
+        json.dump({"mean": LABEL_MEAN, "std": LABEL_STD,
+                   "clean": CLEAN, "lowercase": LOWERCASE if CLEAN else False}, f)
     print(f"\nTraining complete. Saved model to: {SAVE_DIR}")

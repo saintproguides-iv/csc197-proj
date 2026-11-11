@@ -1,5 +1,20 @@
+"""
+evaluate_test.py - ONE-TIME final evaluation on a held-out test CSV.
+
+Use it only when the model is final. It refuses to run without --final, so the
+test set is not touched by accident.
+
+Examples
+  python evaluate_test.py --final                                          # SiP test, ./saved_model
+  python evaluate_test.py --final --model-dir ./saved_model_v2
+  python evaluate_test.py --final --csv data/survey_test.csv --name survey
+
+Input CSV needs two columns: task_description, base_hours
+Needs: a trained model folder (from train.py) and data/sip_train.csv (for the baseline).
+Writes: data/predictions_<name>.csv   (inside data/, which is git-ignored)
+The model's own input cleaning (if it was trained with it) is applied automatically.
+"""
 import argparse
-import json
 import os
 import sys
 
@@ -14,6 +29,8 @@ def parse_args():
     p.add_argument("--csv", default="data/sip_test.csv", help="test CSV to evaluate")
     p.add_argument("--name", default="sip_test", help="label used in the output file name")
     p.add_argument("--model-dir", default="./saved_model")
+    p.add_argument("--force-clean", action="store_true",
+                   help="for older models: collapse repeated letters and spaces before predicting")
     p.add_argument("--train-csv", default="data/sip_train.csv",
                    help="used only to compute the 'always guess the median' baseline")
     p.add_argument("--top", type=int, default=15, help="how many largest errors to print")
@@ -42,30 +59,6 @@ def summarize(df, pred, baseline_hours, name, top=15):
     return out, {"mae": mae, "rmse": rmse, "baseline_mae": base_mae, "within_2x": within2x}
 
 
-def predict_all(texts, model_dir, batch_size=32):
-    import torch
-    from transformers import AutoTokenizer, AutoModelForSequenceClassification
-
-    device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
-    print(f"Loading model from {model_dir} on {device}...")
-    tokenizer = AutoTokenizer.from_pretrained(model_dir)
-    model = AutoModelForSequenceClassification.from_pretrained(model_dir).to(device)
-    model.eval()
-    with open(os.path.join(model_dir, "label_stats.json")) as f:
-        stats = json.load(f)
-
-    preds = []
-    with torch.no_grad():
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i:i + batch_size]
-            enc = tokenizer(batch, return_tensors="pt", truncation=True,
-                            max_length=64, padding=True).to(device)
-            raw = model(**enc).logits.squeeze(-1).float().cpu().numpy()
-            log_pred = raw * stats["std"] + stats["mean"]
-            preds.append(np.maximum(0.1, np.expm1(log_pred)))
-    return np.concatenate(preds)
-
-
 def main():
     args = parse_args()
     if not args.final:
@@ -84,7 +77,10 @@ def main():
         sys.exit("[ERROR] CSV needs columns: task_description, base_hours")
     baseline = float(pd.read_csv(args.train_csv)["base_hours"].median())
 
-    pred = predict_all(df["task_description"].astype(str).tolist(), args.model_dir)
+    from inference import Predictor
+    predictor = Predictor(args.model_dir, force_clean=args.force_clean)
+    print(f"Loaded {args.model_dir} on {predictor.device} ({predictor.describe()})")
+    pred = predictor.predict(df["task_description"].astype(str).tolist())
     out, _ = summarize(df, pred, baseline, args.name, args.top)
 
     os.makedirs("data", exist_ok=True)

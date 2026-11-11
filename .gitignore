@@ -1,7 +1,12 @@
 venv/
-saved_model/
+saved_model*/
 results/
 __pycache__/
 *.pyc
 .DS_Store
 data/predictions_*.csv
+data/robustness_*.csv
+data/sip_train_aug.csv
+data/label_*
+data/academic_scores.csv
+data/sip_train_academic.csv
