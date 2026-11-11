@@ -44,6 +44,29 @@ def calculate_personalized_hours(base_hours: float, speed_score: float, friction
     }
     return max(0.1, round(personalized_hours, 2)), factors_info
 
+def prompt_deadline_hours() -> float:
+    while True:
+        try:
+            val = float(input("Enter hours remaining until deadline (e.g., 24 or 4.5) > ").strip())
+            if val > 0:
+                return val
+            print("  [!] Deadline hours must be greater than 0.")
+        except ValueError:
+            print("  [!] Invalid input. Please enter a valid number of hours.")
+
+def determine_task_urgency(personalized_hours: float, time_remaining: float) -> tuple[str, float]:
+    
+    ratio = personalized_hours / time_remaining
+
+    if ratio >= 0.70 or personalized_hours > time_remaining:
+        status = "URGENT"
+    elif ratio >= 0.30:
+        status = "PACE YOURSELF"
+    else:
+        status = "CAN BE PUSHED BACK"
+
+    return status
+
 def main():
     parser = argparse.ArgumentParser(description="Interactive task-hours predictor.")
     parser.add_argument("--model-dir", default="./saved_model",
@@ -88,6 +111,8 @@ def main():
                 print("\nExiting session. Good luck with your tasks!")
                 break
 
+            time_remaining = prompt_deadline_hours()
+
             if args.no_quantity:
                 hours = predictor.predict_one(user_input)
                 seen = predictor.prepare(user_input)
@@ -108,9 +133,17 @@ def main():
 
             # Adjust baseline effort using personal assessment scores
             adjusted_hours, factors = calculate_personalized_hours(hours, speed_score, friction_score, resilience_score)
+            status = determine_task_urgency(adjusted_hours, time_remaining)
 
-            print(f" Estimated Base Effort       : {hours:.2f} hours")
+            #For demo purposes
+            print(f"S = {factors["s_factor"]} = 1.0 - 0.20 * ({speed_score} - 3.0)")
+            print(f"F = {factors["f_factor"]} = 1.0 + 0.10 * ({friction_score} - 3.0)")
+            print(f"R = {factors["r_factor"]} = 1.0 - 0.075 * ({resilience_score} - 3.0)")
+            print(f"Personalised = {hours:.2f} * {factors["s_factor"]} * {factors["f_factor"]} * {factors["r_factor"]}")
+
             print(f" Personalized Estimated Time : {adjusted_hours:.2f} hours")
+            print(f" Estimated Base Effort       : {hours:.2f} hours")
+            print(f" Priority Status             : {status}\n")
 
         except (KeyboardInterrupt, EOFError):
             print("\n\nSession terminated. Goodbye!")
